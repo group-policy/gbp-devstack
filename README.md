@@ -1,13 +1,13 @@
 # gbp-devstack
-Install stable/kilo devstack with GBP.
+Install stable/juno devstack with GBP.
 
 0. Install Ubuntu 14.04
 
-1. git clone https://git.openstack.org/openstack-dev/devstack -b stable/kilo
+1. git clone https://git.openstack.org/openstack-dev/devstack -b stable/juno
 
 2. cd devstack
 
-3. wget https://raw.githubusercontent.com/group-policy/gbp-devstack/master/gbp-patch.sh
+3. wget https://raw.githubusercontent.com/group-policy/gbp-devstack/juno/gbp-patch.sh
 
 4. chmod +x gbp-patch.sh
 
