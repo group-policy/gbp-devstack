@@ -3,7 +3,7 @@ Install stable/juno devstack with GBP.
 
 0. Install Ubuntu 14.04
 
-1. git clone https://git.openstack.org/openstack-dev/devstack -b stable/juno
+1. git clone https://git.openstack.org/openstack-dev/devstack -b juno-eol
 
 2. cd devstack
 
