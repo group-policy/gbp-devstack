@@ -44,7 +44,7 @@ function install_gbpservice {
     sed -i '/gbptestneutron/d' $GBPSERVICE_DIR/test-requirements.txt
     setup_develop $GBPSERVICE_DIR
     sudo mkdir -p /etc/gbp
-    sudo cp -f $GBPSERVICE_DIR/etc/policy.json $GBP_CONF_DIR/gbp-policy.json
+    sudo cp -f $GBPSERVICE_DIR/etc/policy.json $GBP_CONF_DIR/policy.json
     sudo ln -nfs /etc/neutron/policy.json $GBP_CONF_DIR/policy.json
 }
 
