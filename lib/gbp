@@ -45,7 +45,7 @@ function install_gbpservice {
     setup_develop $GBPSERVICE_DIR
     sudo mkdir -p /etc/gbp
     sudo cp -f $GBPSERVICE_DIR/etc/policy.json $GBP_CONF_DIR/policy.json
-    sudo ln -nfs /etc/neutron/policy.json $GBP_CONF_DIR/policy.json
+    sudo ln -nfs $GBP_CONF_DIR/policy.json /etc/neutron/policy.json $GBP_CONF_DIR/policy.json
 }
 
 # install_gbpclient() - Collect source and prepare
