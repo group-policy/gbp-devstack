@@ -42,8 +42,8 @@ function init_gbpservice {
 function install_gbpservice {
     git_clone $GBPSERVICE_REPO $GBPSERVICE_DIR $GBPSERVICE_BRANCH
     setup_develop $GBPSERVICE_DIR
-    sudo mv -f $NEUTRON_CONF_DIR/policy.json $NEUTRON_CONF_DIR/policy.json.original 2>/dev/null; true
-    sudo cp -f $GBPSERVICE_DIR/etc/policy.json $NEUTRON_CONF_DIR/policy.json
+    mv -f $NEUTRON_CONF_DIR/policy.json $NEUTRON_CONF_DIR/policy.json.original 2>/dev/null; true
+    cp -f $GBPSERVICE_DIR/etc/policy.json $NEUTRON_CONF_DIR/policy.json
 }
 
 # install_gbpclient() - Collect source and prepare
