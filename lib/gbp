@@ -64,6 +64,8 @@ function install_gbpui {
     git_clone $GBPUI_REPO $GBPUI_DIR $GBPUI_BRANCH
     setup_develop $GBPUI_DIR
     ln -sf $GBPUI_DIR/gbpui/_*project*.py $HORIZON_DIR/openstack_dashboard/enabled
+    cd $GBPUI_DIR
+    python $HORIZON_DIR/manage.py collectstatic --noinput
 }
 
 
