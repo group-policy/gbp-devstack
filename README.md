@@ -1,5 +1,5 @@
 # gbp-devstack
-Install stable/kilo devstack with GBP.
+Install stable/liberty devstack with GBP.
 
 0. Install Ubuntu 14.04
 
