@@ -7,7 +7,7 @@ Install stable/kilo devstack with GBP.
 
 2. cd devstack
 
-3. wget https://raw.githubusercontent.com/group-policy/gbp-devstack/master/gbp-patch.sh
+3. wget https://raw.githubusercontent.com/group-policy/gbp-devstack/kilo/gbp-patch.sh
 
 4. chmod +x gbp-patch.sh
 
