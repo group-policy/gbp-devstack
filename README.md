@@ -1,5 +1,27 @@
-# gbp-devstack with NFP implementation
+# gbp-devstack
 Install stable/liberty devstack with GBP.
+
+0. Install Ubuntu 14.04
+
+1. git clone https://git.openstack.org/openstack-dev/devstack -b stable/liberty
+
+2. cd devstack
+
+3. wget https://raw.githubusercontent.com/group-policy/gbp-devstack/liberty/gbp-patch.sh
+
+4. chmod +x gbp-patch.sh
+
+5. ./gbp-patch.sh
+
+6. ./stack.sh
+
+To verify installation run:
+
+exercises/gbp.sh
+
+
+# nfp-devstack
+Install stable/liberty devstack with NFP.
 
 0. Install Ubuntu 14.04
 
@@ -27,7 +49,7 @@ Install stable/liberty devstack with GBP.
     * Advanced Mode Configuration:
         * Devstack installation mode advanced/base
 
-              NFP_DEVSTACK_MODE=base
+            NFP_DEVSTACK_MODE=base
 
         * External network details
 
@@ -53,8 +75,5 @@ Install stable/liberty devstack with GBP.
 
             PUBLIC_INTERFACE=
 
-6. ./stack.sh
+10. ./stack.sh
 
-To verify installation run:
-
-exercises/gbp.sh

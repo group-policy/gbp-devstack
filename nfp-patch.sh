@@ -3,7 +3,7 @@
 set -x
 
 rm -rf local.*
-wget https://raw.githubusercontent.com/group-policy/gbp-devstack/liberty/local.conf
+wget -O local.conf https://raw.githubusercontent.com/group-policy/gbp-devstack/liberty/nfp-local.conf
 wget https://raw.githubusercontent.com/group-policy/gbp-devstack/liberty/lib/nfp -P lib/
 
 sed -i 's/source $TOP_DIR\/lib\/dstat/source $TOP_DIR\/lib\/dstat\nsource $TOP_DIR\/lib\/nfp/g' stack.sh
